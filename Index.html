@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.12.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nerds - студия веб-дизайна</title>
+  </head>
+  <body>
+    
+    <!-- NAVBAR AND CAROUSEL SECTION -->
+      
+    <section id="nav-slider">
+      <!-- LOGO / NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a id="logo" href="Index.html" class="navbar-brand pr-5 mr-5">
+            <img  src="img/nerds-logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item mr-4">
+                <a href="Index.html" class="nav-link"><span class="selected">Студия</span></a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="#" class="nav-link"><span>Клиенты</span></a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="Catalog.html" class="nav-link"><span>Магазин</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><span>Контакты</span></a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">                             
+                <a href="#" class="nav-link"><i class="fas fa-shopping-cart mr-3"></i><span>Корзина</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- SHOW CASE SLIDER / CAROUSEL -->
+      <div id="showcase">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 text-left mb-5 align-self-center">
+                    <h2>Долго, дорого, скрупулезно.</h2>
+                    <p>Математически выверенный дизайн 
+                    для вашего сайта или мобильного приложения.</p>
+                    <a href="#" class="btn btn-danger py-2 px-5">УЗНАТЬ БОЛЬШЕ</a>
+                  </div>   
+                  <div class="col-md-6">
+                    <img src="img/slide1.png" alt="">
+                  </div>   
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 text-left mb-5 align-self-center">
+                    <h2>Любим математику как никто другой.</h2>
+                    <p>Никакого креатива, только математические формулы
+                      для расчета идеальных пропорций.</p>
+                    <a href="#" class="btn btn-danger py-2 px-5">УЗНАТЬ БОЛЬШЕ</a>
+                  </div>   
+                  <div class="col-md-6">
+                    <img src="img/slide2.png" alt="">
+                  </div>   
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 text-left mb-5 align-self-center">
+                    <h2>Только ночь, только хардкор.</h2>
+                    <p>Работать днем, как все? Мы против этого.
+                      Ближе к полуночи работа только начинается.</p>
+                    <a href="#" class="btn btn-danger py-2 px-5">УЗНАТЬ БОЛЬШЕ</a>
+                  </div>   
+                  <div class="col-md-6">
+                    <img src="img/slide3.png" alt="">
+                  </div>   
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+
+          <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME ICON SECTION -->
+
+    <section id="home-icons" class="py-5 my-5">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="img/illustration-1.png" alt="" class="img-fluid card-img-top">
+              <div class="card-body">
+                <h4 class="card-title pt-2">ВЕБ-САЙТЫ</h4>
+                <p class="card-text pt-2">
+                  Мир никогда не будет прежним после того как увидит ваш сайт!
+                </p>
+                <a href="#" class="btn btn-danger mt-3 px-5 py-2">ЗАКАЗАТЬ</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="img/illustration-2.png" alt="" class="img-fluid card-img-top">
+              <div class="card-body">
+                <h4 class="card-title pt-2">ПРИЛОЖЕНИЯ</h4>
+                <p class="card-text pt-2">
+                  Покорите топ-10 приложений в AppStore и Google Play
+                </p>
+                <a href="#" class="btn btn-success mt-3 px-5 py-2">ЗАКАЗАТЬ</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="img/illustration-3.png" alt="" class="img-fluid card-img-top">
+              <div class="card-body">
+                <h4 class="card-title pt-2">ПРЕЗЕНТАЦИИ</h4>
+                <p class="card-text pt-2">
+                  Вы даже не подозреваете насколько вы изумительны!
+                </p>
+                <a href="#" class="btn btn-warning mt-3 px-5 py-2">ЗАКАЗАТЬ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- ABOUT / WHY SECTION -->
+
+    <section id="about" class="py-5 my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7" id="aboutUs">
+            <h1 class="mb-5">Мы — маленькая, но гордая дизайн студия из Краснодара.</h1>
+            <p class="mb-5">
+              Исповедуем принципы минимализма и чистоты. 
+              Ставим математический расчет превыше креатива.
+              Работаем не покладая рук, как роботы.
+            </p>
+            <h4 class="mb-4">Выполняем заказы на разработку:</h4>
+            <ul>
+              <li class="mb-3">Веб-сайтов любой сложности</li>
+              <li class="mb-3">Мобильных приложений для iOS и Android</li>
+              <li class="mb-3">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="col-lg-5" id="whyUs">
+            <div class="row">
+              <div class="col">
+                <img src="img/nerds-illustration.png" class="img-fluid mb-5" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h4 class="mb-5 text-center">С 2004 года любим точность во всем:</h4>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-4">
+                <h2>146%</h2>
+                <p>Уровень самоотдачи</p>
+              </div>
+              <div class="col-4">
+                <h2>100%</h2>
+                <p>Соблюдение сроков</p>
+              </div>
+              <div class="col-4">
+                <h2>50%</h2>
+                <p>Минимальная предоплата</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- OUR CLIENTS -->
+
+    <section id="clients" class="py-5 my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col">
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img src="img/logo-1.png" 
+                    onMouseOver="this.src='img/logo-1hover.png'"
+                    onMouseOut="this.src='img/logo-1.png'"
+                    onmousedown="this.src='img/logo-1click.png'" alt="">
+                </a>   
+              </div>
+              <div class="col">
+                <a href="#"> 
+                  <img src="img/logo-2.png" 
+                    onMouseOver="this.src='img/logo-2hover.png'"
+                    onMouseOut="this.src='img/logo-2.png'"
+                    onmousedown="this.src='img/logo-2click.png'" alt="">
+                </a>   
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col">
+                <a href="#">
+                  <img src="img/logo-3.png" 
+                    onMouseOver="this.src='img/logo-3hover.png'"
+                    onMouseOut="this.src='img/logo-3.png'"
+                    onmousedown="this.src='img/logo-3click.png'" alt="">
+                </a>                
+              </div>
+              <div class="col">
+                <a href="#">
+                  <img src="img/logo-4.png" 
+                    onMouseOver="this.src='img/logo-4hover.png'"
+                    onMouseOut="this.src='img/logo-4.png'"
+                    onmousedown="this.src='img/logo-4click.png'" alt="">
+                </a>   
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->   
+    <hr>    
+
+    <section id="map" class="py-5 my-5" style="position: relative;">
+      <!-- <div style="z-index: 1;"> -->
+      <div>
+        <iframe name="iframe1" id="iframe1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6071882665406!2d30.321244953688385!3d59.938660051123044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1601024628036!5m2!1sru!2skz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <!-- <div class="card text-center" style="position: absolute; z-index: 2; top: 25%;">
+        Можно так наложить кард на карту, но с точки зрения юзабилити очень неудобно, поэтому внизу кард
+        ставим под карту, а не над ней -->
+      <div class="card text-center">
+        <div class="card-body">
+          <h4 class="card-title">NЁRDS DESIGN STUDIO</h4>
+          <p class="card-text text-left mt-4 text-muted">
+            191186, Санкт-Петербург, <br>
+            ул. Б. Конюшенская, д. 19/8 <br> <br>
+            тел. +7 (812) 275-75-75
+          </p>
+          <a href="#" class="btn btn-danger btn-block mt-4 px-5 py-2"
+           data-toggle="modal" data-target="#contactModal">
+            Напишите нам
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="map" class="py-5 my-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="img-wrap">
+            <img src="img/map.png" alt="" class="img-fluid">
+            <div class="card text-center d-none d-lg-block">
+              <div class="card-body">
+                <h4 class="card-title">NЁRDS DESIGN STUDIO</h4>
+                <p class="card-text text-left mt-4 text-muted">
+                  191186, Санкт-Петербург, <br>
+                  ул. Б. Конюшенская, д. 19/8 <br> <br>
+                  тел. +7 (812) 275-75-75
+                </p>
+                <a href="#" class="btn btn-danger btn-block mt-4 px-5 py-2"
+                 data-toggle="modal" data-target="#contactModal">
+                  Напишите нам
+                </a>
+              </div>
+            </div>
+            <img id="mapMarker" src="img/map-marker.png" alt="" class="d-none d-xl-block" >
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- FOOTER -->
+
+    <footer id="main-footer" class="py-5 my-5">
+      <div class="container">
+        <div class="row">
+          <div id="icons" class="col-md-5">
+            <div class="row">
+              <a class="mr-3" href="https://vk.com/">
+                <span><img src="img/vk-icon.png" alt=""></span>                
+              </a>    
+              <a class="mr-3" href="https://www.facebook.com/">
+                <span><img src="img/fb-icon.png" alt=""></span>
+              </a>
+              <a href="https://www.instagram.com/">
+                <span><img src="img/insta-icon.png" alt=""></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h4>Давайте дружить, это выгодно!</h4>
+            <p class="text-muted">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <span id="year"></span> -->
+
+    <!-- CONTACT MODAL -->
+
+    <div id="contactModal" class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+            <h5 class="modal-title">Напишите нам</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="Name">Ваше имя:</label>
+                    <input class="form-control" type="text" placeholder="Имя Фамилия" required>
+                  </div>                  
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="Email">Ваш e-mail:</label>
+                    <input class="form-control" type="email" placeholder="example@example.com" required> 
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Name">Текст письма:</label>
+                <textarea class="form-control" placeholder="В свободной форме" required></textarea>
+              </div> 
+              
+              <div>
+                <input type="submit" class="btn btn-danger mr-auto mt-4 px-5 py-2" value="ОТПРАВИТЬ"></button>
+              </div>
+            </form>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+
+      // Slider settings
+      $("#myCarousel").carousel({
+        interval: 3000,
+        pause: 'hover'
+      });
+
+      // Client-side validation
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+
+      // NO SOLUTION TO HIDE DIRECTIONS FROM MAP
+
+      // var cssLink = document.createElement("link");debugger
+      // cssLink.href = "css/style.css"; 
+      // cssLink.rel = "stylesheet"; 
+      // cssLink.type = "text/css"; 
+      // var myiFrame = document.getElementById("iframe1");
+      // myiFrame.ownerDocument.head.appendChild(cssLink);
+
+      // window.onload = function() {
+      //   let myiFrame = document.getElementById("iframe1");
+      //   let doc = myiFrame.contentDocument;
+      //   doc.body.innerHTML = doc.body.innerHTML + '<style>.place-card, .place-card-large { display:none !important; }</style>';
+      // }
+
+      // var myiFrame = document.getElementById("iframe1");
+      // var doc = myiFrame.contentDocument;
+      // var head = doc.head;
+      // var link = doc.createElement('link');
+      // link.type = 'text/css';
+      // link.rel = 'stylesheet';
+      // link.href = "css/style.css";
+      // head.appendChild(link);
+    </script>
+  </body>
+</html>

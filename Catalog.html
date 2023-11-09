@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.12.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nerds - студия веб-дизайна</title>
+  </head>
+  <body>
+    
+    <!-- NAVBAR AND SHOWCASE SECTION -->
+      
+    <section id="nav-slider">
+      <!-- LOGO / NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a id="logo" href="Index.html" class="navbar-brand pr-5 mr-5">
+            <img  src="img/nerds-logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item mr-4">
+                <a href="Index.html" class="nav-link"><span>Студия</span></a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="#" class="nav-link"><span>Клиенты</span></a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="Catalog.html" class="nav-link"><span class="selected">Магазин</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><span>Контакты</span></a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">                             
+                <a href="#" class="nav-link"><i class="fas fa-shopping-cart mr-3"></i><span>Корзина</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- SHOWCASE -->
+      <div id="showcase" class="py-5 my-5">
+        <div class="text-center">
+          <h1>Магазин готовых шаблонов</h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <aside id="filter" class="col-md-4 pb-5 mb-5">
+          <form>
+            <div class="price">
+              <h3>Стоимость:</h3>
+              <!-- <input type="range" min="0" max="15000" onchange="updateRangeVal(this.value);">
+              <span id="rangeVal"></span> -->
+              <div class="slider">
+                <img width="219" height="2" src="img/slider.png" alt="Слайдер">
+                <img width="20" height="23" src="img/filter-button.png" alt="Кнопка слайдера" class="firstButton">
+                <img width="20" height="23" src="img/filter-button.png" alt="Кнопка слайдера" class="secondButton">            
+              </div>          
+              <p class="label">
+                От 0 до 15000
+                <span></span>
+              </p>
+            </div>
+
+            <div class="grid">
+              <h3>Сетка:</h3>
+              <div class="grid-radio">
+                <div>              
+                    <input id="grid-radio-type-1" type="radio" name="grid-radio-type" value="adaptive" checked>                
+                    <label class="grid-label" for="grid-radio-type-1">Адаптивная</label>
+                </div>
+                <div>
+                  <input id="grid-radio-type-2" type="radio" name="grid-radio-type" value="static" disa>                
+                  <label class="grid-label" for="grid-radio-type-2">Фиксированная</label>
+                </div>       
+                <div>
+                  <input id="grid-radio-type-3" type="radio" name="grid-radio-type" value="fluid">                
+                  <label class="grid-label" for="grid-radio-type-3">Резиновая</label>
+                </div> 
+              </div>
+            </div>
+
+            <div class="features">
+              <h3>Особенности:</h3>
+              <div class="features-checkbox">
+                <div>
+                  <input type="checkbox" name="features-checkbox-1" id="features-checkbox-1" value="slider" checked>
+                  <label class="features-label" for="features-checkbox-1">Слайдер</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="features-checkbox-2" id="features-checkbox-2" value="plusblock">
+                  <label class="features-label" for="features-checkbox-2">Блок преимуществ</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="features-checkbox-3" id="features-checkbox-3" value="news" checked>
+                  <label class="features-label" for="features-checkbox-3">Новости</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="features-checkbox-4" id="features-checkbox-4" value="gallery"> 
+                  <label class="features-label" for="features-checkbox-4">Галерея</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="features-checkbox-5" id="features-checkbox-5" value="cart">
+                  <label class="features-label" for="features-checkbox-5">Корзина</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="submit-form">
+              <input type="submit" value="Показать">
+            </div>
+          </form>
+        </aside>
+
+        <div id="catalog" class="col-8">        
+          <div class="sort row">   
+              <h3 class="col-lg-3">Сортировать:</h3>
+              <ul class="col-lg-9 text-right">
+                <li><a href="#" class="selected">По цене</a></li>
+                <li class="ml-li"><a href="#">По типу</a></li>
+                <li class="ml-li"><a href="#">По названию</a></li>
+                <li class="arrow-down"><a href="#" class="selected"><img src="img/sort/icon-down-dir-active.png" alt="Arrow down"></a></li>
+                <li class="arrow-up"><a href="#"><img src="img/sort/icon-up-dir-active.png" alt="Arrow up"></a></li>
+              </ul>
+          </div>
+          <div class="catalog-list">
+            <!-- TODO: ссылки (+), кнопка (+) и pagination (+), finishing (+) -->
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="browser" src="img/catalog/browser.png" alt="Панель Browser">
+                <img src="img/catalog/img-sedona.jpg" alt="Макет Sedona">
+                <div class="hover-descr">
+                  <h3><a href="#">Sedona</a></h3>
+                  <p>Информационный сайт<br>
+                    для туристов</p>
+                  <button class="btn">9 900 руб.</button>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <img class="browser" src="img/catalog/browser.png" alt="Панель Browser">
+                <img src="img/catalog/img-pink.jpg" alt="Макет Pink">
+                <div class="hover-descr">
+                  <h3><a href="#">Pink App</a></h3>
+                  <p>Продуктовый лендинг<br>
+                    приложения для iOS и Android</p>
+                  <button class="btn">9 900 руб.</button>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-row">
+              <div class="col-lg-6">
+                <img class="browser" src="img/catalog/browser.png" alt="Панель Browser">
+                <img src="img/catalog/img-barbershop.jpg" alt="Макет Barbershop">
+                <div class="hover-descr">
+                  <h3><a href="#">Barbershop</a></h3>
+                  <p>Сайт салона красоты.<br>
+                    Для мужчин, да.</p>
+                  <button class="btn">9 900 руб.</button>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <img class="browser" src="img/catalog/browser.png" alt="Панель Browser">
+                <img src="img/catalog/img-mishka.jpg" alt="Макет Mishka">
+                <div class="hover-descr">
+                  <h3><a href="#">MISHKA</a></h3>
+                  <p>Интернет-магазин<br>
+                    вязаных игрушек</p>
+                  <button class="btn">9 900 руб.</button>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-row">
+              <div class="col-lg-6">
+                <img class="browser" src="img/catalog/browser.png" alt="Панель Browser">
+                <img src="img/catalog/img-aplus.jpg" alt="Макет Aplus">
+                <div class="hover-descr">
+                  <h3><a href="#">A Plus</a></h3>
+                  <p>Лендинг курсов повышения<br>
+                     квалификации</p>
+                  <button class="btn">9 900 руб.</button>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <img class="browser" src="img/catalog/browser.png" alt="Панель Browser">
+                <img src="img/catalog/img-kvast.jpg" alt="Макет Kvast">
+                <div class="hover-descr">
+                  <h3><a href="#">КВАСТ</a></h3>
+                  <p>Промо-сайт производителя<br>
+                    крафтового кваса</p>
+                  <button class="btn">9 900 руб.</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pagination">
+            <ul>
+              <li class="selected"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li class="pagination-next"><a href="#">следующая</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <!-- MAP -->   
+    <hr>    
+
+    <section id="map" class="py-5 my-5" style="position: relative;">
+      <!-- <div style="z-index: 1;"> -->
+      <div>
+        <iframe name="iframe1" id="iframe1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6071882665406!2d30.321244953688385!3d59.938660051123044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1601024628036!5m2!1sru!2skz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <!-- <div class="card text-center" style="position: absolute; z-index: 2; top: 25%;">
+        Можно так наложить кард на карту, но с точки зрения юзабилити очень неудобно, поэтому внизу кард
+        ставим под карту, а не над ней -->
+      <div class="card text-center">
+        <div class="card-body">
+          <h4 class="card-title">NЁRDS DESIGN STUDIO</h4>
+          <p class="card-text text-left mt-4 text-muted">
+            191186, Санкт-Петербург, <br>
+            ул. Б. Конюшенская, д. 19/8 <br> <br>
+            тел. +7 (812) 275-75-75
+          </p>
+          <a href="#" class="btn btn-danger btn-block mt-4 px-5 py-2"
+           data-toggle="modal" data-target="#contactModal">
+            Напишите нам
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer id="main-footer" class="py-5 my-5">
+      <div class="container">
+        <div class="row">
+          <div id="icons" class="col-md-5">
+            <div class="row">
+              <a class="mr-3" href="https://vk.com/">
+                <span><img src="img/vk-icon.png" alt=""></span>                
+              </a>    
+              <a class="mr-3" href="https://www.facebook.com/">
+                <span><img src="img/fb-icon.png" alt=""></span>
+              </a>
+              <a href="https://www.instagram.com/">
+                <span><img src="img/insta-icon.png" alt=""></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h4>Давайте дружить, это выгодно!</h4>
+            <p class="text-muted">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CONTACT MODAL -->
+
+    <div id="contactModal" class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+            <h5 class="modal-title">Напишите нам</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="Name">Ваше имя:</label>
+                    <input class="form-control" type="text" placeholder="Имя Фамилия" required>
+                  </div>                  
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="Email">Ваш e-mail:</label>
+                    <input class="form-control" type="email" placeholder="example@example.com" required> 
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Name">Текст письма:</label>
+                <textarea class="form-control" placeholder="В свободной форме" required></textarea>
+              </div> 
+              
+              <div>
+                <input type="submit" class="btn btn-danger mr-auto mt-4 px-5 py-2" value="ОТПРАВИТЬ"></button>
+              </div>
+            </form>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Client-side validation
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+
+      // function updateRangeVal(val) {
+      //     document.getElementById('rangeVal').innerText=val; 
+      // }
+    </script>
+  </body>
+</html>
